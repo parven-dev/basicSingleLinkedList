@@ -70,7 +70,7 @@ ll.append(10)
 ll.append(20)
 
 ll.prepend(2)
-# print(ll.get_index(-1))
+print(ll.get_index(-1))
 print(ll.set_value(2, 30))
 print(ll.display())
        
