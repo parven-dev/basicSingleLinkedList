@@ -11,3 +11,7 @@ newArray = np.insert(twoDArray, 0, [[99, 88, 77, 66, 55]], axis=0)
 # 1 axis means columns , 0 axis means row 
 # 0 (means first row , if axis is 1 , 0 means firt column) means position row or column 
 print( newArray)
+
+
+newTwoDarray = np.append(newArray,[[34, 35, 36, 37, 38]], axis=0)
+print(newTwoDarray)
