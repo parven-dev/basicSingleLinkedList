@@ -2,17 +2,50 @@ class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
-        self.length = 0
         
         
 class SlinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
+        self.length = 0
+
         
-       
+    
+    def insert(self, value, location):
+        new_node = Node(value)
+        
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+            self.length += 1 
+        
+        else:
+            if location == 0:
+                new_node.next = self.head
+                self.head = new_node
+                
+            elif location == -1:
+                new_node.next = None
+                self.tail.next = new_node
+                
+                self.tail = new_node
+                
+    
+    def display(self):
+        temp = self.head
+        
+        while temp is not None:
+            print(temp.value, "en")
+            temp = temp.next
+        
+        
 
 slinked_list = SlinkedList()
-node1 = Node()
-slinked_list.head =node1
-slinked_list.tail = node1
+
+
+slinked_list.insert(2, 3)
+slinked_list.insert(1, -1)
+
+
+print(slinked_list.display())
