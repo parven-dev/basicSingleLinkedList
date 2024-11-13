@@ -57,7 +57,6 @@ slinked_list = SlinkedList()
 
 slinked_list.insert(2, 0)
 slinked_list.insert(2, 0)
-slinked_list.insert(3, 0)
 slinked_list.insert(1, -1)
 slinked_list.insert(4, 0)
 slinked_list.insert(8, 4)
