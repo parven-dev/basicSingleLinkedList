@@ -28,8 +28,19 @@ class SlinkedList:
             elif location == -1:
                 new_node.next = None
                 self.tail.next = new_node
-                
                 self.tail = new_node
+            
+            else:
+                temp = self.head
+                index = 0
+                
+                while index < location -1:
+                    temp = temp.next
+                    index += 1
+                nextNode = temp.next
+                temp.next = new_node
+                new_node.next = nextNode
+            
                 
     
     def display(self):
@@ -44,8 +55,13 @@ class SlinkedList:
 slinked_list = SlinkedList()
 
 
-slinked_list.insert(2, 3)
+slinked_list.insert(2, 0)
+slinked_list.insert(2, 0)
+slinked_list.insert(3, 0)
 slinked_list.insert(1, -1)
+slinked_list.insert(4, 0)
+slinked_list.insert(8, 4)
+
 
 
 print(slinked_list.display())
