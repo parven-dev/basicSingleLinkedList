@@ -1,7 +1,7 @@
 
 
 my_tuples = ("a", "b", "c", "d")
-searching_value = "d"
+searching_value = "c"
 def searching_element(tuples: tuple, ele):
     for item in range(len(tuples)):
         if tuples[item] == ele:
