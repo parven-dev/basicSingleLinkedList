@@ -27,7 +27,8 @@ class LinkedList:
             temp = temp.next
     
     def merg_sort(self):
-       pass
+        temp = LinkedList()
+        current =  None
    
                     
   
